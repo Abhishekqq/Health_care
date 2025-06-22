@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Data Display</title>
+  <style>
+    .data-container {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: none;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    .data-container.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <button class="data-button" data-name="John Doe" data-age="30">Show Data</button>
+  <div class="data-container"></div>
+
+  <script>
+    const dataButton = document.querySelector('.data-button');
+    const dataContainer = document.querySelector('.data-container');
+
+    dataButton.addEventListener('click', () => {
+      const name = dataButton.getAttribute('data-name');
+      const age = dataButton.getAttribute('data-age');
+      const data = `Name: ${name}, Age: ${age}`;
+      dataContainer.innerHTML = data;
+      dataContainer.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

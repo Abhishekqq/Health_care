@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+</head>
+<body>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Advanced Live Heart Rate Simulator</title>
+<link rel="stylesheet" href="features.css" />
+</head>
+<body>
+
+<h1>Advanced Live Heart Rate Simulator</h1>
+
+<div class="heart-container">
+  <svg class="heart-icon" viewBox="0 0 32 29.6" aria-hidden="true" focusable="false" >
+    <path d="M23.6 0c-2.7 0-5 1.6-6.6 3.9C15.4 1.6 13.1 0 10.4 0 4.7 0 0 4.7 0 10.4c0 7.1 7.6 12.9 16 19.2 8.4-6.3 16-12.1 16-19.2C32 4.7 27.3 0 23.6 0z"/>
+  </svg>
+
+  <div class="heart-rate" id="heartRate">-- bpm</div>
+</div>
+
+<canvas id="chart" width="600" height="140" aria-label="Heart rate chart"></canvas>
+
+<div class="buttons">
+  <button id="startBtn">Start</button>
+  <button id="stopBtn" disabled>Stop</button>
+  <button id="resetBtn" disabled>Reset</button>
+</div>
+
+<div class="card instructions">
+  <h2>Step-by-Step Instructions</h2>
+  <ul>
+    <li>Click <strong>Start</strong> to begin the heart rate simulation.</li>
+    <li>The heart rate will update every second with smooth fluctuations to mimic real heart rate changes.</li>
+    <li>Watch the heart icon pulse in sync with the current heart rate.</li>
+    <li>The graph shows your heart rate over time.</li>
+    <li>Click <strong>Stop</strong> to pause the simulation.</li>
+    <li>Click <strong>Reset</strong> to clear data and reset the simulator.</li>
+  </ul>
+</div>
+
+<div class="card why-it-matters">
+  <h2>Why It Matters</h2>
+  <p>Monitoring your heart rate provides vital insight into your cardiovascular health. It can detect abnormal rhythms, track your fitness improvements, and help you maintain safe exercise intensity. Real-time monitoring allows early detection of potential health issues, empowering you to act proactively and improve your wellbeing.</p>
+</div>
+
+<script src="features.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>
