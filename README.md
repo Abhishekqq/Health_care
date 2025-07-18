@@ -9,8 +9,7 @@ A full-stack healthcare appointment system where users can book hospital appoint
 - 📍 Google Maps integration to find nearby hospitals
 - 📊 Admin dashboard (optional) for managing bookings and patients
 - 📱 Responsive design for mobile and desktop
-- 💾 MySQL database integration for backend storage
-- 🧠 Built with Python (Flask/Django) + HTML/CSS + JS
+- 🧠 Built with HTML/CSS + JS
 
 ## 🛠️ Tech Stack
 
